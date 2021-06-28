@@ -1,66 +1,23 @@
 body {
-    font-family: 'Open-Sans', sans-serif;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-    width: 520px;
-    padding: 0.20px;
-}
-.container h1 {
-    margin-bottom: 16px;
-    margin-top: 0;
-    font-size: 46px;
-    font-weight: 400;
-    line-height: 58px;
-    color: rgb(22, 28, 455);
-    letter-spacing: -1px;
-}
-.container h1 span {
-    color: rgb(51, 94, 234);
-}
-.container p {
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 34px;
-    margin-bottom: 48px;
-    margin-top: 0;
-    color: rgb(134, 154, 184);
-}
-.buttons-container button {
-    padding: 13px 20px;
-    border: 1px solid transparent;
-    background-color: rgb(51, 94, 234);
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-right: 4px;
-    border-radius: 6px;
-    text-align: center;
-    cursor: pointer;
-    transition-duration: 0.25s;
+* {
+    box-sizing: border-box;
 }
 
-.buttons-container button:hover {
-    box-shadow: 0.1rem 2.5rem rgba(22, 28, 45, 0.1),
-        0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
-    transform: translate3d(0, -3px, 0);
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.buttons-container button:last-of-type {
-    color: #335eea;
-    background-color: rgba(51, 94, 234, 0.1);
-}
-
-header  {
+header i {
     font-size: 26px;
     padding: 4px 12px;
     color: #506690;
-}
-
-header .links-container {
-    display: none;
 }
 
 header button {
@@ -76,16 +33,17 @@ header button {
     z-index: 0;
     background-size: cover;
     position: relative;
-    background-image: url("https://landkit.goodtimes.co/assets/img/covers/cover-4.jpg")
+    
+    background-image: url('https://landkit.goodthemes.co/assets/img/covers/cover-4.jpg');
 }
 
 .top-splash-container h1 {
     font-size-adjust: 40px;
-    font-weight: 400;
-    line-height: 48px;
-    margin-bottom: 16px;
+    font-weight: 600;
+    color: white;
     margin-top: 0;
     letter-spacing: -0.8px;
+    line-height: 40px;
     position: relative;
     z-index: 2;
 }
@@ -94,6 +52,7 @@ header button {
     font-size: 19px;
     font-weight: 400;
     line-height: 30px;
+    position: relative;
     z-index: 2;
     color: rgba(255, 255, 255, 0.75);
 }
@@ -102,7 +61,7 @@ header button {
     margin: auto;
 }
 
-.top_splash_container .mask {
+.top-splash-container .mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -124,9 +83,10 @@ header button {
 
 .search-container input {
     width: 100%;
-    padding: 10px 4px;
+    padding: 18px 4px;
     border: none;
-    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    box-shadow: 0 0.5rem 1.5rem rgba(27, 28, 45, 0.1);
+    
 }
 
 .search-container i {
@@ -134,15 +94,16 @@ header button {
     font-size: 17px;
 }
 
-.search-container .input-prepend-container {
-    padding: 0px 4px 0px 24px;
+.search-container .input-preprend-container {
+    padding: 18px 4px 18px 24px;
     background-color: #fff;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    box-shadow: 0 0.5rem 1.5rem rgba(27, 28, 45, 0.1);
     display: flex;
     justify-items: center;
     align-items: center;
+
 }
 
 .search-container .button-container {
@@ -152,17 +113,25 @@ header button {
     background-color: #fff;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow: 0 0.5rem 1.5rem rgba(27, 28, 45, 0.1);
 }
 
 .search-container button {
     padding: 9px 16px;
     font-size: 17px;
-    color: #fff;
-    background-color: rgb(51, 94, 234);
+    color: white;
+    background-color: rgb( 51, 94, 234);
     border: none;
     border-radius: 6px;
     font-weight: 600;
     line-height: 27px;
+
+}
+
+.search-container i {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -176,37 +145,31 @@ header button {
     header .fas {
         display: none;
     }
+
     header .links-container {
         display: flex;
         margin: 0;
         padding: 0;
         align-items: center;
     }
+
     header .links-container li {
         list-style: none;
     }
+
     header .links-container a {
         text-decoration: none;
         color: #506690;
         padding: 8px 24px;
-        font-size: 500;
-        line-height: 27px;
-    }
-    header button {
-        display: block;
-        padding: 9px 16px;
-        border: 1px solid transparent;
-        color: #fff;
-        background-color: #335eea;
-        box-shadow: none;
-        border-radius: 6px;
         font-size: 17px;
         font-weight: 500;
-        line-height: 27.2px;
+        line-height: 27px;
     }
+
     .top-splash-container h1 {
-        font-size: 62px;
+        font-size-adjust: 62px;
         font-weight: 600;
-        line-height: 72px;
+        line-height-step: 72px;
+
     }
 }
