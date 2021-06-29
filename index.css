@@ -20,9 +20,14 @@ header i {
     color: #506690;
 }
 
+header .links-container {
+    display: none;
+}
+
 header button {
     display: none;
 }
+
 
 .top-splash-container {
     padding: 80px 20px 96px 20px;
@@ -41,9 +46,10 @@ header button {
     font-size-adjust: 40px;
     font-weight: 600;
     color: white;
+    margin-bottom: 16px;
     margin-top: 0;
     letter-spacing: -0.8px;
-    line-height: 40px;
+    line-height: 48px;
     position: relative;
     z-index: 2;
 }
