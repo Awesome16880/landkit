@@ -38,7 +38,6 @@ header button {
     z-index: 0;
     background-size: cover;
     position: relative;
-    
     background-image: url('https://landkit.goodthemes.co/assets/img/covers/cover-4.jpg');
 }
 
@@ -98,6 +97,9 @@ header button {
 .search-container i {
     color: rgb(134, 154, 184);
     font-size: 17px;
+    position: relative;
+    justify-items: center;
+    align-items: center;
 }
 
 .search-container .input-preprend-container {
@@ -109,7 +111,6 @@ header button {
     display: flex;
     justify-items: center;
     align-items: center;
-
 }
 
 .search-container .button-container {
@@ -131,13 +132,6 @@ header button {
     border-radius: 6px;
     font-weight: 600;
     line-height: 27px;
-
-}
-
-.search-container i {
-    position: absolute;
-    left: 0;
-    top: 0;
 }
 
 @media only screen and (min-width: 768px) {
