@@ -327,7 +327,7 @@ header button {
 .contact-info .block {
     margin-bottom: 24px;
     display: flex;
-    flex-direction: column;+
+    flex-direction: column;
     justify-content: center;
 } 
 
@@ -432,13 +432,13 @@ footer .logo-container {
     align-items: flex-start;
 }
 
-.footer .logo-container .logo {
+footer .logo-container {
     margin-bottom: 8px;
     height: 20px;
     
 }
 
-.footer .logo-container span {
+footer .logo-container span {
     margin-bottom: 8px;
     display: block;
     line-height: 27px;
@@ -539,12 +539,6 @@ footer .links-container ul li a {
     .contact-info {
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    .contact-info .block {
-        padding: 0 20px;
-        border-right: 1px solid #d9e2ef;
-        width: 33.33%;
     }
 
     .contact-info .block:last-of-type {
