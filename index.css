@@ -280,6 +280,22 @@ header button {
     background-color: #1b2a4e;
 }
 
+.search-grid-container .block:nth-of-type(5) {
+    border-top: 2px solid #6c8aec;
+}
+
+.search-grid-container .block:nth-of-type(5) .icon-container {
+    background-color: #6c8aec;
+}
+
+.search-grid-container .block:nth-of-type(6) {
+    border-top: 2px solid #df4759;
+}
+
+.search-grid-container .block:nth-of-type(6) .icon-container {
+    background-color: #df4759;
+}
+
 .contact-container {
     padding: 48px 20px;
     text-align: center;
@@ -339,7 +355,6 @@ header button {
     display: grid;
     grid-template-rows: 90px 90px 200px auto;
     grid-row-gap: 24px;
-
 }
 
 .contact-container .input-container {
